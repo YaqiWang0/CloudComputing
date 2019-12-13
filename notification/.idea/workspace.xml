@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bdf23891-3378-48cd-8773-2fef977b5083" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="/Applications/apache-maven-3.6.3/lib" />
+        <option name="mavenHome" value="/Applications/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="/Applications/apache-maven-3.6.3/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1UulisriSygmCumxbPIC0ESlsC6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/HelloWorldFunction/src/main/java" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="service" />
+      <recent name="helloworld" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/HelloWorldFunction/src/main/java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="AWS Lambda.[Local] DDBEventProcessor">
+    <configuration name="[Local] DDBEventProcessor" type="aws.lambda" factoryName="Local" temporary="true" nameIsGenerated="true">
+      <option name="credentialProviderId" value="profile:default" />
+      <option name="regionId" value="us-east-2" />
+      <option name="environmentVariables">
+        <map />
+      </option>
+      <option name="handler" value="helloworld.DDBEventProcessor" />
+      <option name="logicalFunctionName" />
+      <option name="memorySize" value="128" />
+      <option name="runtime" value="java8" />
+      <option name="templateFile" />
+      <option name="timeout" value="300" />
+      <option name="useTemplate" value="false" />
+      <option name="input" value="{&#10;  &quot;Records&quot;: [&#10;    {&#10;      &quot;eventID&quot;: &quot;1&quot;,&#10;      &quot;eventName&quot;: &quot;INSERT&quot;,&#10;      &quot;eventVersion&quot;: &quot;1.0&quot;,&#10;      &quot;eventSource&quot;: &quot;aws:dynamodb&quot;,&#10;      &quot;awsRegion&quot;: &quot;{region}&quot;,&#10;      &quot;dynamodb&quot;: {&#10;        &quot;Keys&quot;: {&#10;          &quot;Id&quot;: {&#10;            &quot;N&quot;: &quot;101&quot;&#10;          }&#10;        },&#10;        &quot;NewImage&quot;: {&#10;          &quot;Message&quot;: {&#10;            &quot;S&quot;: &quot;New item!&quot;&#10;          },&#10;          &quot;Id&quot;: {&#10;            &quot;N&quot;: &quot;101&quot;&#10;          }&#10;        },&#10;        &quot;SequenceNumber&quot;: &quot;111&quot;,&#10;        &quot;SizeBytes&quot;: 26,&#10;        &quot;StreamViewType&quot;: &quot;NEW_AND_OLD_IMAGES&quot;&#10;      },&#10;      &quot;eventSourceARN&quot;: &quot;arn:{partition}:dynamodb:{region}:account-id:table/ExampleTableWithStream/stream/2015-06-27T00:48:05.899&quot;&#10;    },&#10;    {&#10;      &quot;eventID&quot;: &quot;2&quot;,&#10;      &quot;eventName&quot;: &quot;MODIFY&quot;,&#10;      &quot;eventVersion&quot;: &quot;1.0&quot;,&#10;      &quot;eventSource&quot;: &quot;aws:dynamodb&quot;,&#10;      &quot;awsRegion&quot;: &quot;{region}&quot;,&#10;      &quot;dynamodb&quot;: {&#10;        &quot;Keys&quot;: {&#10;          &quot;Id&quot;: {&#10;            &quot;N&quot;: &quot;101&quot;&#10;          }&#10;        },&#10;        &quot;NewImage&quot;: {&#10;          &quot;Message&quot;: {&#10;            &quot;S&quot;: &quot;This item has changed&quot;&#10;          },&#10;          &quot;Id&quot;: {&#10;            &quot;N&quot;: &quot;101&quot;&#10;          }&#10;        },&#10;        &quot;OldImage&quot;: {&#10;          &quot;Message&quot;: {&#10;            &quot;S&quot;: &quot;New item!&quot;&#10;          },&#10;          &quot;Id&quot;: {&#10;            &quot;N&quot;: &quot;101&quot;&#10;          }&#10;        },&#10;        &quot;SequenceNumber&quot;: &quot;222&quot;,&#10;        &quot;SizeBytes&quot;: 59,&#10;        &quot;StreamViewType&quot;: &quot;NEW_AND_OLD_IMAGES&quot;&#10;      },&#10;      &quot;eventSourceARN&quot;: &quot;arn:{partition}:dynamodb:{region}:account-id:table/ExampleTableWithStream/stream/2015-06-27T00:48:05.899&quot;&#10;    },&#10;    {&#10;      &quot;eventID&quot;: &quot;3&quot;,&#10;      &quot;eventName&quot;: &quot;REMOVE&quot;,&#10;      &quot;eventVersion&quot;: &quot;1.0&quot;,&#10;      &quot;eventSource&quot;: &quot;aws:dynamodb&quot;,&#10;      &quot;awsRegion&quot;: &quot;{region}&quot;,&#10;      &quot;dynamodb&quot;: {&#10;        &quot;Keys&quot;: {&#10;          &quot;Id&quot;: {&#10;            &quot;N&quot;: &quot;101&quot;&#10;          }&#10;        },&#10;        &quot;OldImage&quot;: {&#10;          &quot;Message&quot;: {&#10;            &quot;S&quot;: &quot;This item has changed&quot;&#10;          },&#10;          &quot;Id&quot;: {&#10;            &quot;N&quot;: &quot;101&quot;&#10;          }&#10;        },&#10;        &quot;SequenceNumber&quot;: &quot;333&quot;,&#10;        &quot;SizeBytes&quot;: 38,&#10;        &quot;StreamViewType&quot;: &quot;NEW_AND_OLD_IMAGES&quot;&#10;      },&#10;      &quot;eventSourceARN&quot;: &quot;arn:{partition}:dynamodb:{region}:account-id:table/ExampleTableWithStream/stream/2015-06-27T00:48:05.899&quot;&#10;    }&#10;  ]&#10;}" />
+      <option name="inputIsFile" value="false" />
+      <sam>
+        <option name="additionalBuildArgs" value="" />
+        <option name="additionalLocalArgs" value="" />
+        <option name="buildInContainer" value="false" />
+        <option name="dockerNetwork" value="" />
+        <option name="skipImagePull" value="false" />
+      </sam>
+      <method v="2" />
+    </configuration>
+    <configuration name="[Local] HelloWorldFunction" type="aws.lambda" factoryName="Local" nameIsGenerated="true">
+      <option name="credentialProviderId" />
+      <option name="regionId" />
+      <option name="environmentVariables">
+        <map />
+      </option>
+      <option name="handler" />
+      <option name="logicalFunctionName" value="HelloWorldFunction" />
+      <option name="memorySize" value="128" />
+      <option name="runtime" />
+      <option name="templateFile" value="$PROJECT_DIR$/template.yaml" />
+      <option name="timeout" value="300" />
+      <option name="useTemplate" value="true" />
+      <option name="input" />
+      <option name="inputIsFile" value="false" />
+      <sam>
+        <option name="additionalBuildArgs" />
+        <option name="additionalLocalArgs" />
+        <option name="buildInContainer" value="false" />
+        <option name="dockerNetwork" />
+        <option name="skipImagePull" value="false" />
+      </sam>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="AWS Lambda.[Local] DDBEventProcessor" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bdf23891-3378-48cd-8773-2fef977b5083" name="Default Changelist" comment="" />
+      <created>1576214490732</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576214490732</updated>
+      <workItem from="1576214495137" duration="1462000" />
+      <workItem from="1576216323026" duration="3277000" />
+      <workItem from="1576223123063" duration="431000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="554" y="60" key="#[Local]_DDBEventProcessor" timestamp="1576216394277">
+      <screen x="0" y="23" width="1792" height="1017" />
+    </state>
+    <state x="554" y="60" key="#[Local]_DDBEventProcessor/0.23.1792.1017@0.23.1792.1017" timestamp="1576216394277" />
+    <state x="1140" y="394" key="#com.intellij.ide.util.MemberChooser" timestamp="1576217525662">
+      <screen x="0" y="23" width="1792" height="1017" />
+    </state>
+    <state x="1140" y="394" key="#com.intellij.ide.util.MemberChooser/0.23.1792.1017@0.23.1792.1017" timestamp="1576217525662" />
+    <state x="1253" y="341" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576214528326">
+      <screen x="0" y="23" width="1792" height="1017" />
+    </state>
+    <state x="1253" y="341" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1792.1017@0.23.1792.1017" timestamp="1576214528326" />
+    <state x="424" y="150" key="SettingsEditor" timestamp="1576214708753">
+      <screen x="0" y="23" width="1792" height="1017" />
+    </state>
+    <state x="424" y="150" key="SettingsEditor/0.23.1792.1017@0.23.1792.1017" timestamp="1576214708753" />
+    <state x="600" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1576223124718">
+      <screen x="0" y="23" width="1792" height="1017" />
+    </state>
+    <state x="600" y="344" key="com.intellij.ide.util.TipDialog/0.23.1792.1017@0.23.1792.1017" timestamp="1576223124718" />
+  </component>
+</project>
